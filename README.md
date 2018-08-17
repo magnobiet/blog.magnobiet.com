@@ -1,4 +1,4 @@
-# blog.magnobiet.com
+# [Magno’s Blog](https://blog.magnobiet.com/)
 
 > Made with ♥ using [Jekyll](http://jekyllrb.com/).
 
@@ -21,7 +21,7 @@ git init
 git checkout -b gh-pages
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/magnobiet/blog.git
+git remote add origin git@github.com:magnobiet/blog.magnobiet.com.git
 git push -u origin gh-pages
 ```
 
@@ -35,8 +35,11 @@ blog.magnobiet.com.	300	IN	CNAME	magnobiet.github.io.
 ## References
 
 - https://jekyllrb.com/docs/home/
+- https://jekyll.github.io/jekyll-admin/
+- https://github.com/jekyll/minima
 - https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+- https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/
 
-## Licence
+## License
 
-[MIT](https://magno.mit-license.org/2018)
+This project is licensed under the [MIT License](https://magno.mit-license.org/2018). Copyright © Magno Biét
