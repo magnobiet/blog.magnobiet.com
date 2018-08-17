@@ -3,7 +3,7 @@ title: Como deixei de pagar para usar MEU dinheiro
 layout: post
 date: '2017-09-13 20:34:50 -0300'
 permalink: como-deixei-de-pagar-para-usar-meu-dinheiro-e6548051e3e5
-categories: financial planning-finance freedom money
+categories: [Financial, Planning Finance, Money]
 ---
 
 ![](/uploads/0*yGYn4AgbQxQY6qAD.png)

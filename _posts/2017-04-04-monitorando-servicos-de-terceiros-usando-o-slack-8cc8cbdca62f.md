@@ -3,7 +3,7 @@ title: Monitorando serviços de terceiros usando o Slack
 layout: post
 date: '2017-04-04 16:51:16 -0300'
 permalink: monitorando-servicos-de-terceiros-usando-o-slack-8cc8cbdca62f
-categories: monitoring slack devops
+categories: [Monitoring, Slack, DevOps]
 ---
 
 ![Meu canal #status-page no Slack](/uploads/1*ZbaDdPv6w8WQTxKtttFssw.png)
