@@ -18,13 +18,13 @@ Durante meu processo de aprendizado com o que ia aprendendo, tive o prazer de po
 
 ## O início
 
-Bom acho que assim como todos que querem ter mais controle sobre suas finanças, mantive por alguns anos uma planilha no [Google Spreadsheet](https://www.google.com/sheets/about/). Nela lançava minhas receitas e despesas para ter um controle básico de minhas finanças. Mas com o tempo a manutenção de uma planilha se tornou um pouco chata, então comecei a procurar por algum aplicativo que substitui-se minha planilha.
+Bom acho que assim como todos que querem ter mais controle sobre suas finanças, mantive por alguns anos uma planilha no [Google Spreadsheet](https://www.google.com/sheets/about/){:target="_blank"}. Nela lançava minhas receitas e despesas para ter um controle básico de minhas finanças. Mas com o tempo a manutenção de uma planilha se tornou um pouco chata, então comecei a procurar por algum aplicativo que substitui-se minha planilha.
 
 Uma das premissa era um aplicativo que funciona-se bem no celular, para que pudesse mesmo que no meio da rua lançar alguma despesa caso necessário para não esquecer mais tarde.
 
 Testei diversos aplicativos, alguns com funcionalidades muito boas. Alguns inclusive se “conectam” com o banco e sincronizam as transações. Como sempre me preocupei com segurança, contactei esses aplicativos e com meu banco na época para saber como era feita essa integração, mas como nenhum dos lados explica como isso acontece, preferi ficar no modo manual.
 
-## O aplicativo [Money Lover](https://medium.com/@moneyloverapp)
+## O aplicativo [Money Lover](https://medium.com/@moneyloverapp){:target="_blank"}
 
 Dentre os diversos aplicativos que testei o que mais me agradou foi Money Lover. O aplicativo é simples, com uma interface agradável e leve. Ele gera alguns relatórios simples que ajudam a entender um pouco melhor o fluxo financeiro.
 
@@ -34,7 +34,7 @@ Uma coisa que gosto bastante no Money Lover é a possibilidade de transferir val
 
 O aplicativo está disponível para Android, iOS, Windows, e uma versão Web simplificada.
 
-[https://moneylover.me/](https://moneylover.me/)
+[https://moneylover.me/](https://moneylover.me/){:target="_blank"}
 
 ---
 
@@ -42,7 +42,7 @@ Durante este meu processo de aprendizagem tendo a ajuda de um aplicativo que me 
 
 ---
 
-## O banco [Santander Brasil](https://medium.com/@santanderbrasil)
+## O banco [Santander Brasil](https://medium.com/@santanderbrasil){:target="_blank"}
 
 Durante alguns anos fui correntista do banco Santander, não cheguei a ter problemas de relacionamento com o banco, mas analisando alguns números simples, e “benefícios” disponível não era mais vantajoso manter minha conta com eles.
 
@@ -70,7 +70,7 @@ Por fim em agosto de 2017 cancelei minha conta.
 
 😎
 
-## Minha conta digital do banco [Itaú](https://medium.com/@itau)
+## Minha conta digital do banco [Itaú](https://medium.com/@itau){:target="_blank"}
 
 Antes mesmo de encerrar minha conta no banco Santander obviamente já procurava alternativas para não gastar mais com tarifas. Achei vários bancos digitais em que a tarifa era zero além de algumas outras vantagens.
 
@@ -82,7 +82,7 @@ Resumindo passei a economizar aproximadamente R$ 150 por ano em taxa de manuten�
 
 Em uma simples mudança de banco passei a economizar mais de R$ 260 por anos.
 
-## Meu cartão de crédito [Nubank](https://medium.com/@nubank)
+## Meu cartão de crédito [Nubank](https://medium.com/@nubank){:target="_blank"}
 
 ![RIP Burocracia e Anuidade](/uploads/0*rlc3FuD6RIXFtt2N.jpg)
 
@@ -102,7 +102,7 @@ Mudando de banco, cortando algumas despesas e tendo mais controle sobre meus gas
 
 ---
 
-## [Easynvest](https://medium.com/@Easynvest)
+## [Easynvest](https://medium.com/@Easynvest){:target="_blank"}
 
 ![Dê o primeiro passo. #InvistaNaSuaIndependencia](/uploads/0*PVEOW6VHcyeTcWXb.jpeg)
 
@@ -110,7 +110,7 @@ Pensando em começar a investir meu dinheiro de verdade fui pesquisando e encont
 
 Eles possuem um ótimo aplicativo para *smartphone* que facilita bastante o gerenciamento das minhas aplicações assim como para efetuar novas aplicações.
 
-[https://www.easynvest.com.br/](https://www.easynvest.com.br/)
+[https://www.easynvest.com.br/](https://www.easynvest.com.br/){:target="_blank"}
 
 ---
 
