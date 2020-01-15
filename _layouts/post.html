@@ -18,7 +18,7 @@ layout: default
 			</span>
 			{%- endif -%}
 			•
-			{%- include read_time.html -%}
+			{%- include read-time.html -%}
 		</p>
 	</header>
 
@@ -27,7 +27,7 @@ layout: default
 	</div>
 
 	{%- if site.disqus.shortname -%}
-	{%- include disqus_comments.html -%}
+	{%- include disqus-comments.html -%}
 	{%- endif -%}
 
 	<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
