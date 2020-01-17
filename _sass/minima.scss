@@ -1,50 +1,226 @@
 @charset 'utf-8';
 
-// Define defaults for each variable.
+$media-small: 576px;
+$media-medium: 768px;
+$media-large: 992px;
+$media-extra-large: 1200px;
 
-$base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
-$base-font-size: 16px !default;
-$base-font-weight: 400 !default;
-$small-font-size: $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+:root {
+  // Colors
+  --color-white: #fff;
+  --color-aqua-haze: #f6f8fa;
+  --color-iron: #d1d5da;
+  --color-shuttle-gray: #586069;
+  --color-dove-gray: #666;
+  --color-shark: #24292e;
+  --color-bahama-blue: #005c9a;
 
-$spacing-unit: 30px !default;
+  // Default font
+  --default-font-size: 16px;
+  --default-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 
-$text-color: #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color: #2a7ae2 !default;
+  // Default colors
+  --default-text-color: var(--color-shark);
+  --default-link-color: var(--color-bahama-blue);
+  --default-background-color: var(--color-aqua-haze);
+  --default-card-color: var(--color-white);
+  --default-card-border: var(--color-iron);
+  --default-footer-color: var(--color-shuttle-color);
 
-$grey-color: #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark: darken($grey-color, 25%) !default;
+  // PX -> REM sizes
+  --size-1: 0.0625rem;
+  --size-2: 0.125rem;
+  --size-3: 0.1875rem;
+  --size-4: 0.25rem;
+  --size-8: 0.5rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-24: 1.5rem;
+  --size-28: 1.75rem;
+  --size-32: 2rem;
+  --size-48: 3rem;
+  --size-52: 3.5rem;
+  --size-576: 36rem;
+  --size-960: 60rem;
+  --size-1280: 80rem;
+}
 
-$table-text-align: left !default;
+* {
+  box-sizing: border-box;
+}
 
-// Width of the content area
-$content-width: 800px !default;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
-$on-palm: 600px !default;
-$on-laptop: 800px !default;
+body {
+  font-size: var(--default-font-size);
+  font-family: var(--default-font-family);
+  color: var(--default-text-color);
+  background: var(--default-background-color);
+  padding: 0 var(--size-16);
+}
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
+a {
+  color: var(--default-link-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--default-link-color);
   }
 }
 
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+img {
+  min-width: 100%;
+  max-width: 100%;
 }
 
-// Import partials.
+hr {
+  height: 0;
+  display: block;
+  border: 0;
+  text-align: center;
+  overflow: visible;
+  margin-top: var(--size-48);
+  margin-bottom: var(--size-48);
 
-@import 'minima/base';
-@import 'minima/layout';
-@import 'minima/syntax-highlighting';
+  &:before {
+    content: '...';
+    display: inline-block;
+    margin-left: var(--size-16);
+    position: relative;
+    top: calc(var(--size-48) * -1);
+    font-size: var(--size-48);
+    letter-spacing: var(--size-16);
+  }
+}
+
+.page-content {
+  max-width: 100%;
+  margin: var(--size-16);
+
+  @media only screen and (min-width: $media-medium) {
+    width: var(--size-960);
+    margin: 0 auto;
+  }
+}
+
+.page-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: var(--size-16);
+  text-align: right;
+  font-weight: lighter;
+  box-shadow: 0 var(--size-2) var(--size-4) rgba(0, 0, 0, 0.075);
+  z-index: 2;
+  background: var(--color-aqua-haze);
+
+  @media only screen and (min-width: $media-extra-large) {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.page-header {
+  margin: var(--size-52) 0;
+}
+
+.page-title {
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 2.9rem;
+  font-weight: normal;
+  margin: 0;
+
+  @media only screen and (min-width: $media-small) {
+    font-size: 4rem;
+  }
+
+  a {
+    color: var(--color-shark);
+  }
+}
+
+.page-description {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: lighter;
+
+  @media only screen and (min-width: $media-small) {
+    font-size: var(--size-24);
+  }
+}
+
+.posts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .post {
+    .post-title {
+      margin: 0;
+    }
+
+    .post-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-indent: -9999rem;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  background: var(--default-card-color);
+  border: var(--size-1) solid var(--default-card-border);
+  box-sizing: border-box;
+  border-radius: var(--size-3);
+  margin-bottom: var(--size-28);
+  padding: var(--size-28);
+}
+
+.post-page {
+  .post {
+    &.card {
+      margin-bottom: var(--size-8);
+    }
+  }
+
+  .post-title {
+    margin: 0;
+  }
+
+  .post-meta {
+    font-size: var(--size-14);
+    color: var(--color-dove-gray);
+  }
+}
+
+.other-posts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer {
+  margin: var(--size-52) 0;
+  color: var(--default-footer-color);
+  text-align: center;
+  font-weight: lighter;
+
+  p {
+    margin: 0;
+  }
+}
