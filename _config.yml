@@ -20,9 +20,10 @@
 title: Magno’s Blog
 author: Magno Biét
 email: magno.biet@gmail.com
-description: ""
+description: "I am a front-end developer."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.magnobiet.com" # the base hostname & protocol for your site, e.g. http://example.com
+main_site: "https://magnobiet.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: magnobiet
 github_username:  magnobiet
 linkedin_username: magnobiet
