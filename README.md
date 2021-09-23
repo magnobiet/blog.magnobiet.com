@@ -1,35 +1,40 @@
 # [Magno’s Blog](https://blog.magnobiet.com/)
 
-> Made with ♥ using [Jekyll](http://jekyllrb.com/).
-
-Proudly hosted by [GitHub](https://github.com/).
+> Made with ♥ using [Jekyll](http://jekyllrb.com/) and proudly hosted by [GitHub](https://github.com/).
 
 [![CloudFlare](https://www.cloudflare.com/media/images/web-badges/cf-web-badges-c-gray-on.png)](https://www.cloudflare.com/)
 
 ## TL;DR
 
 ```bash
+# install jekyll
 gem install bundler jekyll
 
+# create a new jekyll project
 jekyll new blog && cd $_
-bundle install
-jekyll serve --host=0.0.0.0
-
-echo "blog.magnobiet.com" > CNAME
-
-git init
-git checkout -b gh-pages
-git add .
-git commit -m "Initial commit"
-git remote add origin git@github.com:magnobiet/blog.magnobiet.com.git
-git push -u origin gh-pages
 ```
 
-## DNS record
+### Development
+
+```bash
+# run development environment
+npm run start
+
+# run jekyll build
+npm run build
+```
+
+## DNS
 
 ```ini
 ;; CNAME Records
 blog.magnobiet.com.	300	IN	CNAME	magnobiet.github.io.
+```
+
+### CNAME
+
+```bash
+echo "blog.magnobiet.com" > CNAME
 ```
 
 ## References
@@ -42,4 +47,4 @@ blog.magnobiet.com.	300	IN	CNAME	magnobiet.github.io.
 
 ## License
 
-This project is licensed under the [MIT License](https://magno.mit-license.org/2018). Copyright © Magno Biét
+This project is licensed under the [MIT License](https://magno.mit-license.org/2018-2021). Copyright © Magno Biét
