@@ -57,3 +57,6 @@ exclude:
   - vendor/ruby/
   - package*.json
   - commitlint.config.js
+  - lint-staged.config.js
+  - stylelint.config.js
+  - .husky/

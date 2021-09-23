@@ -7,13 +7,3 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
-
-[{*.html,*.svg}]
-indent_style = tab
-indent_size = 4
-
-# https://github.com/jedmao/eclint#block_comment
-[*.{ts,scss}]
-block_comment_start = /*
-block_comment = *
-block_comment_end = */
