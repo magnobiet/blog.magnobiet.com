@@ -4,28 +4,28 @@ layout: default
 
 <div class="home-page">
 
-	{{ content }}
+  {{ content }}
 
-	{%- if site.posts.size > 0 -%}
-	<ol class="posts">
+  {%- if site.posts.size > 0 -%}
+  <ol class="posts">
 
-		{%- for post in site.posts -%}
-		<li class="post card">
+    {%- for post in site.posts -%}
+    <li class="post card">
 
-			{%- assign date_format = site.date_format | default: "%d/%m/%Y" -%}
-			<h3 class="post-title">{{ post.title | escape }}</h3>
-			<span class="post-date">{{ post.date | date: date_format }}</span>
+      {%- assign date_format = site.date_format | default: "%d/%m/%Y" -%}
+      <h3 class="post-title">{{ post.title | escape }}</h3>
+      <span class="post-date">{{ post.date | date: date_format }}</span>
 
-			{%- if site.show_excerpts -%}
-			{{ post.excerpt }}
-			{%- endif -%}
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      {%- endif -%}
 
-			<a class="post-link" href="{{ post.url | relative_url }}" title="Read '{{ post.title | escape }}'	">Read</a>
+      <a class="post-link" href="{{ post.url | relative_url }}" title="Read '{{ post.title | escape }}'	">Read</a>
 
-		</li>
-		{%- endfor -%}
+    </li>
+    {%- endfor -%}
 
-	</ol>
-	{%- endif -%}
+  </ol>
+  {%- endif -%}
 
 </div>

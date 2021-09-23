@@ -1,39 +1,39 @@
 <header class="page-header" role="banner">
 
-	{%- assign default_paths = site.pages | map: "path" -%}
-	{%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-	<h1 class="page-title" rel="author">
-		<a href="{{ site.url | relative_url }}">
-			{{ site.title | escape }}
-		</a>
-	</h1>
+  <h1 class="page-title" rel="author">
+    <a href="{{ site.url | relative_url }}">
+      {{ site.title | escape }}
+    </a>
+  </h1>
 
-	{%- if site.description -%}
-	<h2 class="page-description">{{ site.description | escape }}</h2>
-	{%- endif -%}
+  {%- if site.description -%}
+  <h2 class="page-description">{{ site.description | escape }}</h2>
+  {%- endif -%}
 
-	<nav class="page-nav">
+  <nav class="page-nav">
 
-		<a class="page-link" href="{{ site.main_site }}">
+    <a class="page-link" href="{{ site.main_site }}">
 
-			<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M3.97456 7.40387L4.17975 7.21055C4.31573 7.08242 4.31573 6.87466 4.17975 6.7465L1.74434 4.46483H12.6518C12.8441 4.46483 13 4.31791 13 4.1367V3.86327C13 3.68206 12.8441 3.53514 12.6518 3.53514H1.74434L4.17975 1.25347C4.31573 1.12534 4.31573 0.91758 4.17975 0.78942L3.97456 0.5961C3.83858 0.467967 3.61811 0.467967 3.48213 0.5961L0.101983 3.76797C-0.0339944 3.89611 -0.0339944 4.10386 0.101983 4.23202L3.48213 7.4039C3.61811 7.53203 3.83858 7.53203 3.97456 7.40387Z" fill="#005C9A" />
-			</svg>
+      <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.97456 7.40387L4.17975 7.21055C4.31573 7.08242 4.31573 6.87466 4.17975 6.7465L1.74434 4.46483H12.6518C12.8441 4.46483 13 4.31791 13 4.1367V3.86327C13 3.68206 12.8441 3.53514 12.6518 3.53514H1.74434L4.17975 1.25347C4.31573 1.12534 4.31573 0.91758 4.17975 0.78942L3.97456 0.5961C3.83858 0.467967 3.61811 0.467967 3.48213 0.5961L0.101983 3.76797C-0.0339944 3.89611 -0.0339944 4.10386 0.101983 4.23202L3.48213 7.4039C3.61811 7.53203 3.83858 7.53203 3.97456 7.40387Z" fill="#005C9A" />
+      </svg>
 
-			{{ site.main_site | replace:'http://' | replace:'https://' }}
+      {{ site.main_site | replace:'http://' | replace:'https://' }}
 
-		</a>
+    </a>
 
-		{%- if page_paths -%}
-		{%- for path in page_paths -%}
-		{%- assign my_page = site.pages | where: "path", path | first -%}
-		{%- if my_page.title -%}
-		<a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-		{%- endif -%}
-		{%- endfor -%}
-		{%- endif -%}
+    {%- if page_paths -%}
+    {%- for path in page_paths -%}
+    {%- assign my_page = site.pages | where: "path", path | first -%}
+    {%- if my_page.title -%}
+    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {%- endif -%}
+    {%- endfor -%}
+    {%- endif -%}
 
-	</nav>
+  </nav>
 
 </header>
