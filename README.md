@@ -17,6 +17,8 @@ jekyll new blog && cd $_
 ### Development
 
 ```bash
+npm install
+
 # run development environment
 npm run start
 
