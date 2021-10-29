@@ -14,10 +14,12 @@ $media-extra-large: 1200px;
   --color-dove-gray: #666666;
   --color-shark: #24292e;
   --color-bahama-blue: #005c9a;
+  --color-fire-opal: #eb5757;
+  --color-middle-grey: #87837826;
 
   // Default font
   --default-font-size: 16px;
-  --default-font-family: 'Open Sans', helvetica, arial, sans-serif;
+  --default-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 
   // Default colors
   --default-text-color: var(--color-shark);
@@ -220,5 +222,17 @@ hr {
 
   p {
     margin: 0;
+  }
+}
+
+.language-plaintext {
+  &.highlighter-rouge {
+    padding: .2em .4em;
+    background: var(--color-middle-grey);
+    border-radius: var(--size-4);
+    color: var(--color-fire-opal);
+    font-family: monospace;
+    font-size: 85%;
+    line-height: normal;
   }
 }
