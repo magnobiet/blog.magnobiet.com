@@ -28,6 +28,7 @@ twitter_username: magnobiet
 github_username:  magnobiet
 linkedin_username: magnobiet
 rss: rss
+show_drafts: false
 
 # Build settings
 markdown: kramdown

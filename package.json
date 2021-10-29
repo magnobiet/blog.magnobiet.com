@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "postinstall": "bundle install",
-    "start": "jekyll serve --host=0.0.0.0",
+    "start": "jekyll serve --drafts",
     "build": "jekyll build",
     "lint:editorconfig": "editorconfig-checker",
     "lint:style": "stylelint './_sass/**/*.{sass,scss}'",
